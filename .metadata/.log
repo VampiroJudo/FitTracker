@@ -4435,3 +4435,12 @@ Binding(ALT+ARROW_UP,
 
 !ENTRY org.eclipse.lsp4e 1 0 2017-08-10 17:11:32.036
 !MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-08-10 17:32:05.592
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-08-10 17:32:17.786
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2017-08-10 17:32:43.729
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
