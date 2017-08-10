@@ -14,7 +14,7 @@
 		<form:form commandName = "exercise">
 			<tr>
 				<td>Minutes Exercised for Today:</td>
-				<td><form:imput path="minutes"/></td>
+				<td><form:input path="minutes"/></td>
 			</tr>
 			<tr>
 				<td colspan="2">
