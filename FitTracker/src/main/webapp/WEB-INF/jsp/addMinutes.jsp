@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-
+	
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.DTD">
@@ -13,7 +14,7 @@
 		<h1>Add Minutes Exercised</h1>
 		<form:form commandName = "exercise">
 			<tr>
-				<td>Minutes Exercised for Today:</td>
+				<td><spring:message code="goal.text"/></td>
 				<td><form:input path="minutes"/></td>
 			</tr>
 			<tr>
