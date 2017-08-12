@@ -16,15 +16,17 @@
 		Language: <a href=?Language=en">English</a> <a href="?Language=es">Spanish</a>
 		
 		<form:form commandName = "exercise">
-			<tr>
-				<td><spring:message code="goal.text"/></td>
-				<td><form:input path="minutes"/></td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<input type="submit" value="Enter Exercise"/>
-				</td>	
-			</tr>
+			<table>
+				<tr>
+					<td><spring:message code="goal.text"/></td>
+					<td><form:input path="minutes"/></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="Enter Exercise"/>
+					</td>	
+				</tr>
+			</table>	
 		</form:form>
 	</body>
 </html>		
