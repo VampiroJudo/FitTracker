@@ -7663,3 +7663,9 @@ Binding(ALT+ARROW_UP,
 
 !ENTRY org.eclipse.jface.text 2 0 2017-08-16 14:51:47.070
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-16 14:55:00.300
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-16 14:55:00.358
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
