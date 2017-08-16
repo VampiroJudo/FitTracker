@@ -7255,3 +7255,21 @@ org.eclipse.core.runtime.OperationCanceledException
 
 !ENTRY org.eclipse.lsp4e 1 0 2017-08-15 20:09:35.786
 !MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-15 20:16:04.458
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-15 20:16:04.501
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-15 20:16:04.641
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-15 20:16:04.642
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-15 20:16:14.798
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-15 20:16:14.817
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
