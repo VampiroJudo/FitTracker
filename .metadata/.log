@@ -7651,3 +7651,9 @@ Binding(ALT+ARROW_UP,
 
 !ENTRY org.eclipse.lsp4e 1 0 2017-08-16 14:26:14.208
 !MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-16 14:37:20.630
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-08-16 14:37:20.746
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
