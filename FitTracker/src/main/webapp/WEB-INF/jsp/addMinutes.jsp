@@ -15,7 +15,7 @@
 		<script type="text.javascript">
 			$(document).ready(
 				function() {
-					$.getJSON('http://localhost:8080/FitTracker/activities.json', {
+					$.getJSON('<spring:url value="activities.json"/>', {
 						ajax : 'true'
 						}, function(data){
 							var html = '<option value="">--Please select one--</option>';
