@@ -7246,3 +7246,12 @@ org.eclipse.core.runtime.OperationCanceledException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-08-15 20:07:12.002
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2017-08-15 20:07:30.644
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-08-15 20:09:35.786
+!MESSAGE Non IFiles not supported yet
