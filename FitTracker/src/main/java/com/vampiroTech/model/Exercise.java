@@ -1,11 +1,17 @@
 package com.vampiroTech.model;
 
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.Range;
+
 public class Exercise {
 	
+	@Range(min = 1, max = 120)
 	private int minutes;
 	
 	private String activity;
 
+	@NotNull
 	public int getMinutes() {
 		return minutes;
 	}
