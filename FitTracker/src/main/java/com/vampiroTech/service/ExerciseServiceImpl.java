@@ -26,6 +26,14 @@ public class ExerciseServiceImpl implements ExerciseService {
 		run.setDesc("Swim");
 		activities.add(swim);
 		
+		Activity gym = new Activity();
+		run.setDesc("Gym");
+		activities.add(gym);
+		
+		Activity bodyWeight = new Activity();
+		run.setDesc("Body Weight");
+		activities.add(bodyWeight);
+		
 		return activities;
 		
 		
