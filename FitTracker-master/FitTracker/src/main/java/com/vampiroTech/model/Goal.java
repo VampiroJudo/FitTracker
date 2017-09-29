@@ -14,6 +14,7 @@ public class Goal {
 
 	@Id;
 	@GeneratedValue;
+	@Column(name="GOAL_ID")
 	private Long id;
 
 	@Range(min = 1, max = 120)
