@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import org.hibernate.validator.constraints.Range;
 
 @Entity
+@Table(name="goals")
 public class Goal {
 	
 	private Long id;
