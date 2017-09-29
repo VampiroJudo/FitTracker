@@ -5,7 +5,25 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2017-09-28T15:08:20Z</updated>
+  <updated>2017-09-28T15:09:00Z</updated>
+  <entry>
+    <title>Pivotal and Spring Team at JavaOne 2017</title>
+    <link rel="alternate" href="https://spring.io/blog/2017/09/28/pivotal-and-spring-team-at-javaone-2017" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2017-09-28:3047</id>
+    <updated>2017-09-28T15:09:00Z</updated>
+    <content type="html">&lt;p&gt;It&amp;rsquo;s that time of year again! It&amp;rsquo;s an exciting time for Java developers with Java 9 freshly out the door, with the promise of a faster release cadence for the language itself in the air.&lt;br/&gt;If you&amp;rsquo;re coming to the event, come check out talks with Pivotal / Spring Team speakers, and visit us at the booth for hands on lab stations for Reactive Spring, Microservices and Cloud Foundry!&lt;/p&gt;
+&lt;p&gt;Cloud-Native Application Development with Cloud Foundry on Oracle Cloud&lt;br/&gt;Devin Carlen, Oracle&lt;br/&gt;Dormain Drewitz, Director Product Marketing, Pivotal Software&lt;br/&gt;Prasad Bopardikar, Advisory Partner Solution Architect, Pivotal&lt;br/&gt;Tuesday, Oct 03, 3:00 p.m. - 3:45 p.m. | Moscone West - Room 2003&lt;/p&gt;
+&lt;p&gt;Services, Assemble! Apply MVP Principles to Create Microservices Without Chaos&lt;br/&gt;Mark Heckler, Principal Technologist/Developer Advocate, Pivotal&lt;br/&gt;Thursday, Oct 05, 12:45 p.m. - 1:30 p.m. | Marriott Marquis (Yerba Buena Level) - Salon 14&lt;/p&gt;
+&lt;p&gt;Machine Learning Exposed: Workshop&lt;br/&gt;James Weaver, Developer Advocate, Pivotal&lt;br/&gt;Tuesday, Oct 03, 8:30 a.m. - 10:30 a.m. | Hilton San Francisco Union Square (Lobby Level) - Golden Gate 4/5&lt;/p&gt;
+&lt;p&gt;Going Reactive with Spring 5 and Project Reactor&lt;br/&gt;Mark Heckler, Principal Technologist/Developer Advocate, Pivotal&lt;br/&gt;Josh Long, developer, Pivotal&lt;br/&gt;Tuesday, Oct 03, 8:30 a.m. - 9:15 a.m. | Moscone West - Room 2006&lt;/p&gt;
+&lt;p&gt;Quantum Computing Exposed: The Fundamentals&lt;br/&gt;James Weaver, Developer Advocate, Pivotal&lt;br/&gt;Johan Vos, CTO, Gluon&lt;br/&gt;Monday, Oct 02, 4:30 p.m. - 5:15 p.m. | Moscone West - Room 2010&lt;/p&gt;
+&lt;p&gt;Clouds and Containers: Straight Up, What’s the Difference and Why Should I Care?&lt;br/&gt;Mark Heckler, Principal Technologist/Developer Advocate, Pivotal&lt;br/&gt;Jennifer Reif, Programmer Analyst, Edward Jones&lt;br/&gt;Wednesday, Oct 04, 11:45 a.m. - 12:30 p.m. | Moscone West - Room 2024&lt;/p&gt;
+&lt;p&gt;Microservices BOF&lt;br/&gt;Ilya Dmitrichenko, DX, Weaveworks&lt;br/&gt;Chris Richardson, Software Craftsman, Eventuate, Inc&lt;br/&gt;Josh Long, developer, Pivotal&lt;br/&gt;Monday, Oct 02, 6:30 p.m. - 7:15 p.m. | Moscone West - Room 2002&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Reactor Bismuth is out</title>
     <link rel="alternate" href="https://spring.io/blog/2017/09/28/reactor-bismuth-is-out" />
@@ -1702,63 +1720,5 @@ public UserDetailsService userDetailsService() throws Exception {&#xD;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You can also provide your own &lt;code&gt;AuthenticationManager&lt;/code&gt; bean or &lt;code&gt;AuthenticationProvider&lt;/code&gt; bean, which will then be used.&lt;/p&gt;&lt;h3&gt;&lt;a href="#additional-improvements" class="anchor" name="additional-improvements"&gt;&lt;/a&gt;Additional improvements&lt;/h3&gt;&lt;h4&gt;&lt;a href="#status-endpoint" class="anchor" name="status-endpoint"&gt;&lt;/a&gt;Status endpoint&lt;/h4&gt;
 &lt;p&gt;Previously, the health endpoint would decide whether to return just the status or expose full health details based on the presence of a role. Users who always wanted to expose full health details, would need to set the &lt;code&gt;management.security.flag&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt; which was less than ideal as it would expose other actuators. As part of 2.0, we&amp;rsquo;ve added a separate status endpoint which returns just the status. The health endpoint always returns the full health details. Both endpoints are secure by default but it makes adding custom security rules for the two cases much easier.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud Stream Ditmars/1.3 Release Candidate Announcement</title>
-    <link rel="alternate" href="https://spring.io/blog/2017/09/14/spring-cloud-stream-ditmars-1-3-release-candidate-announcement" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Gary Russell</name>
-    </author>
-    <id>tag:spring.io,2017-09-14:3028</id>
-    <updated>2017-09-14T20:43:03Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;We are pleased to announce that the release candidate Spring Cloud Stream Ditmars.RC1 is available for use in the &lt;a href="http://repo.spring.io/libs-milestone/"&gt;Spring Milestone&lt;/a&gt; repository. The &lt;a href="https://github.com/spring-cloud/spring-cloud-stream-starters/releases/tag/vDitmars.RC1"&gt;release notes&lt;/a&gt; include relevant information about version compatibility with Spring Boot, Spring Cloud, Spring AMQP, and Spring for Apache Kafka.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="kafka-streams-for-apache-kafka"&gt;&lt;a class="anchor" href="#kafka-streams-for-apache-kafka"&gt;&lt;/a&gt;Kafka Streams for Apache Kafka&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This release targets the promotion of &lt;a href="https://docs.spring.io/spring-cloud-stream/docs/Ditmars.RC1/reference/htmlsingle/#_kafka_streams_binding_capabilities_of_spring_cloud_stream"&gt;Kafka Streams for Apache Kafka&lt;/a&gt; support as a top-level project in the Apache Kafka binder implementation. With Kafka Streams for Apache Kafka positioned as a first-class citizen, developers can now build Spring Cloud Stream applications by taking advantage of the Kafka Streams API at the binding level, so that it is much simpler to implement real-time data-processing business functions. The developers can focus on the functionality as opposed to the infrastructure and the messaging middleware configuration specifics, which Spring Cloud Stream tackles head-on by addressing it out-of-the-box. In addition to writing standard stream processing applications, Spring Cloud Stream binder for Kafka Streams enables developers to write applications that leverage on the interactive query features of Kafka Streams. Check out the &lt;a href="https://github.com/spring-cloud/spring-cloud-stream-samples/tree/master/kstream"&gt;samples&lt;/a&gt; for more details.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="apache-kafka-0-11"&gt;&lt;a class="anchor" href="#apache-kafka-0-11"&gt;&lt;/a&gt;Apache Kafka 0.11&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;By popular demand from customers and the community, we are excited to also announce Apache Kafka 0.11 support for Spring Cloud Stream. Given the foundation projects (Spring for Apache Kafka and Spring Integration Kafka) are adding the 0.11 support more explicitly in their next major releases, the team made sure to make 0.11 available as a preview-release for Spring Cloud Stream by back porting it to a minor release. For that reason, there is a 0.11 branch that explicitly adds support for the Apache Kafka 0.11 release. For early adopters who are interested in upgrading to this release, we have released it as a &lt;a href="http://repo.spring.io/libs-milestone/org/springframework/cloud/spring-cloud-stream-binder-kafka11/1.3.0.RC1/"&gt;stand alone artifact&lt;/a&gt;. Similarly, there is an &lt;a href="http://repo.spring.io/libs-milestone/org/springframework/cloud/spring-cloud-stream-binder-kstream11/1.3.0.RC1/"&gt;artifact for the kstream binder for 0.11&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="admonitionblock note"&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class="icon"&gt;
-&lt;div class="title"&gt;Note&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class="content"&gt;
-As a reminder, the Spring Cloud Stream 2.0 release of Apache Kafka binder implementation will default to Apache Kafka 0.11 and that will be the only version supported in this next major release. The older Apache Kafka versions will be supported in the 1.3.x release line of Spring Cloud Stream.
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="error-handling"&gt;&lt;a class="anchor" href="#error-handling"&gt;&lt;/a&gt;Error Handling&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Further improving the error handling support, we have simplified &lt;a href="https://docs.spring.io/spring-cloud-stream/docs/Ditmars.RC1/reference/htmlsingle/#binder-error-channels"&gt;producer- and consumer-level exception handling&lt;/a&gt;. The creation and orchestration of error channels and the global representation of the same have been reimplemented in this release train, too.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Apart from this, a variety of bug-fixes and improvements are part of the release. For more details, please refer to project level release markers in the &lt;a href="https://github.com/spring-cloud/spring-cloud-stream-starters/releases/tag/vDitmars.RC1"&gt;release notes&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;For next steps, we are planning to release the general availability of the Spring Cloud Stream Ditmars release train by the end of this month. As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-stream"&gt;Stackoverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-cloud/spring-cloud-stream/"&gt;GitHub&lt;/a&gt; or via &lt;a href="https://gitter.im/spring-cloud/spring-cloud-stream"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;See the &lt;a href="http://cloud.spring.io/spring-cloud-stream/"&gt;project page&lt;/a&gt; for more information.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
   </entry>
 </feed>
