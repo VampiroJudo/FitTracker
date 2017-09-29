@@ -1,6 +1,7 @@
 package com.vampiroTech.model;
 
 import javax.persistence.Entity;
+import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
@@ -10,13 +11,15 @@ import org.hibernate.validator.constraints.Range;
 @Table(name="goals")
 public class Goal {
 	
+
+	@Id;
+	@GeneratedValue;
 	private Long id;
 
 	@Range(min = 1, max = 120)
+	@Column(name="MINUTES")
 	private int minutes;
 	
-	@Id;
-	@GeneratedValue;
 	public Long getId() {
 		return id;
 	}
