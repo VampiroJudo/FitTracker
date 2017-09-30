@@ -2,6 +2,7 @@ package com.vampiroTech.repository;
 
 import org.springframework.stereotype.Repository;
 
+
 import com.vampiroTech.model.Goal;
 
 @Repository("goalRepository")
@@ -15,7 +16,7 @@ public class GoalRepositoryImpl implements GoalRepository {
 		
 		em.persist(goal);
 		
-		return null;
+		return goal;
 	}
 
 }

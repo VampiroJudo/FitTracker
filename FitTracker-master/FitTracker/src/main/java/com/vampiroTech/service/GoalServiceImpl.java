@@ -11,8 +11,7 @@ public class GoalServiceImpl implements GoalService {
 
 	public Goal save(Goal goal) {
 		
-		@Autowired
-		private GoalRepository goalRespository;
+		@Autowired GoalRepository goalRespository;
 		
 		return goalRepository.save(goal);
 		
