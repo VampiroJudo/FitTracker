@@ -7928,3 +7928,34 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springso
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-09-30 01:20:25.544
 !MESSAGE No repository found at http://download.eclipse.org.
+!SESSION 2017-09-30 10:19:03.403 -----------------------------------------------
+eclipse.buildId=3.9.0.201707061823-RELEASE-e47
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -keyring /Users/JohnnyRingo/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -keyring /Users/JohnnyRingo/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-09-30 10:19:28.439
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-09-30 10:22:31.223
+!MESSAGE No repository found at http://download.eclipse.org.
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-09-30 10:25:25.633
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-09-30 10:27:30.521
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-09-30 10:37:30.055
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-09-30 10:37:30.146
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-09-30 10:37:33.628
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-09-30 10:37:33.978
+!MESSAGE Non IFiles not supported yet
