@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import org.hibernate.validator.constraints.Range;
 
@@ -12,8 +13,8 @@ import org.hibernate.validator.constraints.Range;
 public class Goal {
 	
 
-	@Id;
-	@GeneratedValue;
+	@Id
+	@GeneratedValue
 	@Column(name="GOAL_ID")
 	private Long id;
 

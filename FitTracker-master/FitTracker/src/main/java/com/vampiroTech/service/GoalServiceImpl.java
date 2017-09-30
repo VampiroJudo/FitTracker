@@ -9,13 +9,12 @@ import com.vampiroTech.repository.GoalRepository;
 @Service("goalService")
 public class GoalServiceImpl implements GoalService {
 
-	public Goal save(Goal goal) {
-		
-		@Autowired GoalRepository goalRespository;
-		
-		return goalRepository.save(goal);
-		
-		
-	}
 
+		
+		@Autowired 
+		private GoalRepository goalRepository;
+		
+		public Goal save(Goal goal) {
+			return goalRepository.save(goal);
+		}
 }
