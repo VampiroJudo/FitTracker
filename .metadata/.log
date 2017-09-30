@@ -7733,3 +7733,6 @@ org.eclipse.core.internal.resources.ResourceException: Resource '/FitTracker/src
 
 !ENTRY org.eclipse.lsp4e 1 0 2017-09-29 20:00:12.408
 !MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-09-29 20:03:43.673
+!MESSAGE Non IFiles not supported yet
