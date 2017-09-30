@@ -44,7 +44,7 @@ public class GoalController {
 			goalService.save(goal);
 		}
 		
-		return "redirect:addMinutes.html";
+		return "redirect:index.jsp";
 	}
 
 }
