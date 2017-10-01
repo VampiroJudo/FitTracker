@@ -2,6 +2,7 @@ package com.vampiroTech.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.vampiroTech.model.Activity;
 import com.vampiroTech.model.Exercise;
+import com.vampiroTech.model.Goal;
 import com.vampiroTech.service.ExerciseService;
 
 @Controller
@@ -29,13 +31,18 @@ public class MinutesController {
 	}
 	
 	@RequestMapping(value = "/addMinutes",  method = RequestMethod.POST)
-	public String addMinutes(@Valid @ModelAttribute ("exercise") Exercise exercise, BindingResult result) {
+	public String addMinutes(@Valid @ModelAttribute ("exercise") Exercise exercise, HttpSession session,BindingResult result) {
 		
 		System.out.println("exercise: " + exercise.getMinutes());
 		System.out.println("exercise activity: " + exercise.getActivity());
 		
 		if(result.hasErrors()) {
 			return "addMinutes";
+		} else {
+			Goal goal = (Goal)session.getAttribute("goal");
+			
+			exercise.setGoal(goal);
+			exerciseService.save(exercise);
 		}
 		
 		return "addMinutes";

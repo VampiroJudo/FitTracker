@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.vampiroTech.model.Activity;
+import com.vampiroTech.model.Exercise;
 
 @Service("exerciseService")
 public class ExerciseServiceImpl implements ExerciseService {
@@ -40,6 +41,12 @@ public class ExerciseServiceImpl implements ExerciseService {
 	}
 
 	public List<Activity> findAllActivities() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Exercise save(Exercise exercise) {
 		// TODO Auto-generated method stub
 		return null;
 	}
