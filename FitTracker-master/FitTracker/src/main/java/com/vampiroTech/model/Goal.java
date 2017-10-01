@@ -1,9 +1,15 @@
 package com.vampiroTech.model;
 
 import javax.persistence.Entity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.hibernate.validator.constraints.Range;
@@ -22,12 +28,24 @@ public class Goal {
 	@Column(name="MINUTES")
 	private int minutes;
 	
+	
+	@OneToMany(mappedBy="goal", cascade=CascadeType.ALL)
+	private List<Exercise> exercises = new ArrayList<Exercise>();
+	
+	public List<Exercise> getExercises() {
+		return exercises;
+	}
+
 	public Long getId() {
 		return id;
 	}
 
 	public int getMinutes() {
 		return minutes;
+	}
+
+	public void setExercises(List<Exercise> exercises) {
+		this.exercises = exercises;
 	}
 	
 	public void setId(Long id) {
