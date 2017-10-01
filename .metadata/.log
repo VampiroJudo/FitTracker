@@ -8944,3 +8944,12 @@ java.net.UnknownHostException: spring.io: unknown error
 
 !ENTRY org.eclipse.jface.text 2 0 2017-10-01 16:07:59.918
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-10-01 16:20:58.312
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-10-01 16:21:00.385
+!MESSAGE Non IFiles not supported yet
+
+!ENTRY org.eclipse.lsp4e 1 0 2017-10-01 16:21:00.385
+!MESSAGE Non IFiles not supported yet
