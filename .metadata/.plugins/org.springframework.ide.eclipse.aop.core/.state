@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="FitTracker"/>
+<aop-project name="FitTracker">
+<aspect-definition advice-class-name="org.springframework.transaction.interceptor.TransactionInterceptor" advice-method-name="invoke" advice-method-parameter-types="org.aopalliance.intercept.MethodInvocation" advice-type="AROUND" aspect-end-line-number="35" aspect-name="org.springframework.transaction.interceptor.TransactionInterceptor#FitTracker#src/main/resources/jpaContext.xml#35" aspect-start-line-number="35" factory-id="org.springframework.ide.eclipse.aop.core.javaAdvisorDefinitionElementFactory" file="/FitTracker/src/main/resources/jpaContext.xml" pointcut-expression="(@within(org.springframework.transaction.annotation.Transactional) || @annotation(org.springframework.transaction.annotation.Transactional)) &amp;&amp; execution(* *..*(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:FitTracker|3:src/main/resources/jpaContext.xml|7:beans:7|8:goalService:7" bean-file="/FitTracker/src/main/resources/jpaContext.xml" bean-start-line="7" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/FitTracker/src/main/resources/jpaContext.xml" source="=FitTracker/\/Users\/JohnnyRingo\/.m2\/repository\/org\/springframework\/spring-tx\/3.2.0.RELEASE\/spring-tx-3.2.0.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=FitTracker/src\/main\/java&lt;com.vampiroTech.service{GoalServiceImpl.java[GoalServiceImpl~save~QGoal;" target-start-line="19"/>
+</aspect-definition>
+</aop-project>
 </aop-reference-model>
