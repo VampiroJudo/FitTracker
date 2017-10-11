@@ -43,8 +43,7 @@ public class MinutesController {
 			
 			exercise.setGoal(goal);
 			exerciseService.save(exercise);
-		}
-		
+		} 
 		return "addMinutes";
 	}
 	

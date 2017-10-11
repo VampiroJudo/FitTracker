@@ -3,12 +3,19 @@ package com.vampiroTech.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.vampiroTech.model.Activity;
+import com.vampiroTech.model.Exercise;
+import com.vampiroTech.repository.ExerciseRepository;
 
 @Service("exerciseService")
 public class ExerciseServiceImpl implements ExerciseService {
+	
+	@Autowired
+	private ExerciseRepository exerciseRepository;
 	
 	public List<Activity> findAllActivites() {
 		
@@ -20,6 +27,7 @@ public class ExerciseServiceImpl implements ExerciseService {
 		
 		Activity bike = new Activity();
 		run.setDesc("Bike");
+		
 		activities.add(bike);
 		
 		Activity swim = new Activity();
@@ -39,9 +47,16 @@ public class ExerciseServiceImpl implements ExerciseService {
 		
 	}
 
-	public List<Activity> findAllActivities() {
-		// TODO Auto-generated method stub
-		return null;
+
+	@Transactional
+	public Exercise save(Exercise exercise) {
+		
+		exercise = exerciseRepository.save(exercise);
+		
+		
+		return exercise;
 	}
 
+
+	
 }
