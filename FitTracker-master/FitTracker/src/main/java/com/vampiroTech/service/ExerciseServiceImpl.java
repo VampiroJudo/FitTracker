@@ -58,5 +58,11 @@ public class ExerciseServiceImpl implements ExerciseService {
 	}
 
 
+	@Override
+	public List<Activity> findAllActivities() {
+		return null;
+	}
+
+
 	
 }

@@ -12,6 +12,7 @@ eclipse.preferences.version=1
 entityReference=\#FF007F | null | null | null | null | null
 newFileTemplateName=xml declaration
 org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart.lastActivePage=1
+overriddenByCSS=,
 piBorder=\#A7EC21 | null | null | null | null | null
 piContent=\#CFBFAD | null | null | null | null | null
 tagAttributeEquals=\#CFBFAD | null | null | null | null | null
