@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 
 import com.vampiroTech.model.Goal;
+import com.vampiroTech.model.GoalReport;
 
 @Repository("goalRepository")
 public class GoalRepositoryImpl implements GoalRepository {
@@ -34,6 +35,15 @@ public class GoalRepositoryImpl implements GoalRepository {
 		List goals = query.getResultList();
 		
 		return goals;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<GoalReport> findAllGoalReports() {
+		Query query = em.createQuery("Select new com.pluralsight.model.GoalReport(g.minutes, e.minutes, e.activity) " + 
+					"from Goal g, Exercise e whereg.id = e.goal.id");
+		
+		return query.getResultList();
 	}
 
 }

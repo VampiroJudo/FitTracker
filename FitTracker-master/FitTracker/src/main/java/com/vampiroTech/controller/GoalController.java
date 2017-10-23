@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.vampiroTech.model.Goal;
+import com.vampiroTech.model.GoalReport;
 import com.vampiroTech.service.GoalService;
 
 @Controller
@@ -56,5 +57,14 @@ public class GoalController {
 		model.addAttribute("goals", goals);
 		
 		return "getGoals";
+	}
+	
+	@RequestMapping(value = "getGoalReports", method = RequestMethod.GET)
+	public String getGoalReports(Model model) {
+		List<GoalReport> goalReports = goalService.findAllGoalReports();
+		
+		model.addAttribute("goalReports", goalReports);
+		
+		return "getGoalReports";
 	}
 }
