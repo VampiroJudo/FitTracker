@@ -31,11 +31,15 @@ public class GoalRepositoryImpl implements GoalRepository {
 
 	@SuppressWarnings({"rawtypes", "unchecked"})
 	public List<Goal> loadAll() {
-		Query query = em.createQuery("Select g from Goal g");
+		//Query query = em.createQuery("Select g from Goal g");
 		
-		List goals = query.getResultList();
+		TypedQuery<Goal> query = em.createNamedQuery(GOAL.FIND_ALL_GOALS, Goal.class);
 		
-		return goals;
+		//List goals = query.getResultList();
+		
+		//return goals;
+		
+		return query.getResultList();
 	}
 
 	public List<GoalReport> findAllGoalReports() {
