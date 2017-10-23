@@ -12,14 +12,20 @@
 	</head>
 	<body>
 	
-		<tb>
+		<table>
 			<tr>
 				<th>Minutes</th>
 				<th>Exercise Minutes</th>
 				<th>Activity</th>
-				
 			</tr>
-		</tb>
+			<c:forEach items="${goalReports}" var="goalReport">
+				<tr>
+					<td>${goalReport.goalMinutes}</td>
+					<td>${goalReport.exerciseMinutes}</td>
+					<td>${goalReport.exerciseActivity}</td>
+				</tr>
+			</c:forEach>
+		</table>
 
 	</body>
 </html>
